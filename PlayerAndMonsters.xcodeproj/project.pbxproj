@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2DE7D52AD42EF0003A3A80 /* AttackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2DE7D42AD42EF0003A3A80 /* AttackButtonView.swift */; };
+		CC2DE7D72AD43176003A3A80 /* HealButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2DE7D62AD43176003A3A80 /* HealButtonView.swift */; };
+		CC2DE7D92AD43794003A3A80 /* LogoGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2DE7D82AD43794003A3A80 /* LogoGameView.swift */; };
+		CC59D43E2AD3BC3B00816B30 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59D43D2AD3BC3B00816B30 /* GameViewController.swift */; };
+		CC59D4422AD3FE4C00816B30 /* InfoCreatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59D4412AD3FE4B00816B30 /* InfoCreatureView.swift */; };
 		CC64F2952ACDC688003CB3CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC64F2942ACDC688003CB3CF /* AppDelegate.swift */; };
 		CC64F2972ACDC688003CB3CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC64F2962ACDC688003CB3CF /* SceneDelegate.swift */; };
 		CC64F2992ACDC688003CB3CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC64F2982ACDC688003CB3CF /* ViewController.swift */; };
 		CC64F29E2ACDC691003CB3CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC64F29D2ACDC691003CB3CF /* Assets.xcassets */; };
 		CC64F2A12ACDC691003CB3CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC64F29F2ACDC691003CB3CF /* LaunchScreen.storyboard */; };
+		CC64F2A92ACDCC0E003CB3CF /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC64F2A82ACDCC0D003CB3CF /* Creature.swift */; };
+		CC64F2AB2ACDCC8F003CB3CF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC64F2AA2ACDCC8F003CB3CF /* Player.swift */; };
+		CC64F2AD2ACDCCB0003CB3CF /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC64F2AC2ACDCCB0003CB3CF /* Monster.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC2DE7D42AD42EF0003A3A80 /* AttackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackButtonView.swift; sourceTree = "<group>"; };
+		CC2DE7D62AD43176003A3A80 /* HealButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealButtonView.swift; sourceTree = "<group>"; };
+		CC2DE7D82AD43794003A3A80 /* LogoGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoGameView.swift; sourceTree = "<group>"; };
+		CC59D43D2AD3BC3B00816B30 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CC59D4412AD3FE4B00816B30 /* InfoCreatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCreatureView.swift; sourceTree = "<group>"; };
 		CC64F2912ACDC688003CB3CF /* PlayerAndMonsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerAndMonsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC64F2942ACDC688003CB3CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC64F2962ACDC688003CB3CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +35,9 @@
 		CC64F29D2ACDC691003CB3CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC64F2A02ACDC691003CB3CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC64F2A22ACDC691003CB3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC64F2A82ACDCC0D003CB3CF /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		CC64F2AA2ACDCC8F003CB3CF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CC64F2AC2ACDCCB0003CB3CF /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC2DE7D02AD42539003A3A80 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CC64F2962ACDC688003CB3CF /* SceneDelegate.swift */,
+				CC64F2942ACDC688003CB3CF /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		CC2DE7D12AD42544003A3A80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC64F2A82ACDCC0D003CB3CF /* Creature.swift */,
+				CC64F2AA2ACDCC8F003CB3CF /* Player.swift */,
+				CC64F2AC2ACDCCB0003CB3CF /* Monster.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC2DE7D22AD4254C003A3A80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC59D4412AD3FE4B00816B30 /* InfoCreatureView.swift */,
+				CC2DE7D42AD42EF0003A3A80 /* AttackButtonView.swift */,
+				CC2DE7D62AD43176003A3A80 /* HealButtonView.swift */,
+				CC2DE7D82AD43794003A3A80 /* LogoGameView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC2DE7D32AD42553003A3A80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC64F2982ACDC688003CB3CF /* ViewController.swift */,
+				CC59D43D2AD3BC3B00816B30 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		CC64F2882ACDC688003CB3CF = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +109,10 @@
 		CC64F2932ACDC688003CB3CF /* PlayerAndMonsters */ = {
 			isa = PBXGroup;
 			children = (
-				CC64F2942ACDC688003CB3CF /* AppDelegate.swift */,
-				CC64F2962ACDC688003CB3CF /* SceneDelegate.swift */,
-				CC64F2982ACDC688003CB3CF /* ViewController.swift */,
+				CC2DE7D32AD42553003A3A80 /* Controller */,
+				CC2DE7D22AD4254C003A3A80 /* View */,
+				CC2DE7D12AD42544003A3A80 /* Model */,
+				CC2DE7D02AD42539003A3A80 /* Delegates */,
 				CC64F29D2ACDC691003CB3CF /* Assets.xcassets */,
 				CC64F29F2ACDC691003CB3CF /* LaunchScreen.storyboard */,
 				CC64F2A22ACDC691003CB3CF /* Info.plist */,
@@ -134,8 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC59D43E2AD3BC3B00816B30 /* GameViewController.swift in Sources */,
+				CC2DE7D92AD43794003A3A80 /* LogoGameView.swift in Sources */,
+				CC64F2A92ACDCC0E003CB3CF /* Creature.swift in Sources */,
 				CC64F2992ACDC688003CB3CF /* ViewController.swift in Sources */,
+				CC59D4422AD3FE4C00816B30 /* InfoCreatureView.swift in Sources */,
 				CC64F2952ACDC688003CB3CF /* AppDelegate.swift in Sources */,
+				CC2DE7D72AD43176003A3A80 /* HealButtonView.swift in Sources */,
+				CC64F2AB2ACDCC8F003CB3CF /* Player.swift in Sources */,
+				CC2DE7D52AD42EF0003A3A80 /* AttackButtonView.swift in Sources */,
+				CC64F2AD2ACDCCB0003CB3CF /* Monster.swift in Sources */,
 				CC64F2972ACDC688003CB3CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
